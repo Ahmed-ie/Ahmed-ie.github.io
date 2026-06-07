@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal — Ahmed Elmi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Nav ───────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-name">Ahmed Elmi</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Password gate ─────────────────────────────────── -->
+  <div id="gate" class="gate-wrap">
+    <div class="gate-box">
+      <p class="gate-label">Journal</p>
+      <form id="gateForm" autocomplete="off">
+        <input
+          id="gateInput"
+          type="password"
+          class="gate-input"
+          placeholder="Password"
+          autofocus
+        >
+        <p id="gateError" class="gate-error" hidden>Wrong password.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── Journal (shown after auth) ───────────────────── -->
+  <main id="journalMain" class="journal-main" hidden>
+
+    <div class="journal-header container">
+      <h1>Journal</h1>
+      <button id="lockBtn" class="btn btn-ghost btn-sm">Lock</button>
+    </div>
+
+    <!-- New entry form -->
+    <div class="journal-compose container">
+      <div class="compose-meta">
+        <span id="todayDate" class="compose-date"></span>
+        <span class="compose-hint">What did you do today?</span>
+      </div>
+      <textarea
+        id="entryText"
+        class="compose-area"
+        placeholder="Write your entry..."
+        rows="5"
+      ></textarea>
+      <div class="compose-actions">
+        <button id="saveBtn" class="btn">Save entry</button>
+        <span id="saveMsg" class="save-msg" hidden>Saved.</span>
+      </div>
+    </div>
+
+    <!-- Past entries -->
+    <div class="entries-list container" id="entriesList"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Ahmed Elmi</span>
+      <div class="footer-links">
+        <a href="mailto:ahmed.ibelmi@gmail.com">Email</a>
+        <a href="https://github.com/Ahmed-ie" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ahmed-i-elmi/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
