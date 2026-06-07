@@ -27,10 +27,12 @@
 
     <!-- ── Hero ──────────────────────────────────────────── -->
     <section class="hero container">
-      <h1>I love breaking<br>and building things.</h1>
-      <p class="hero-sub">
-        CS student at Dartmouth. Now diving deep into
-        security, privacy, and agents.
+      <p class="hero-line">
+        I love <span class="hero-accent">breaking</span> and <span class="hero-accent">building</span> things.
+        CS student at <em>Dartmouth</em>. Diving into
+        <span class="hero-underline">security</span>,
+        <span class="hero-underline">privacy</span>, and
+        <span class="hero-underline">agents</span>.
       </p>
       <div class="hero-links">
         <a href="mailto:ahmed.ibelmi@gmail.com" class="btn">Get in touch</a>
@@ -40,74 +42,289 @@
 
     <!-- ── Work ──────────────────────────────────────────── -->
     <section id="work" class="work container">
+
+      <!-- Row 1: Education + Skills -->
       <div class="work-cols">
 
-        <!-- Experience -->
         <div class="work-col">
+          <h2 class="col-heading">Education</h2>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Dartmouth College</span>
+              <span class="entry-date">2023 – 2027</span>
+            </div>
+            <p class="entry-role">B.A. Computer Science &amp; Economics · GPA 3.8</p>
+            <p class="entry-desc">Hanover, NH · Davis Scholar · UGAR Research Funding Recipient</p>
+            <p class="entry-desc" style="margin-top:0.4rem;">
+              Data Structures, Software Design, Deep Learning, OS, Compilers, ML &amp; Data Analysis, Full Stack Web Dev
+            </p>
+          </div>
+        </div>
+
+        <div class="work-col">
+          <h2 class="col-heading">Skills</h2>
+
+          <div class="entry">
+            <p class="entry-role" style="margin-bottom:0.4rem;">Languages</p>
+            <div class="tags" style="margin-bottom:0.75rem;">
+              <span class="tag">Python</span><span class="tag">Java</span>
+              <span class="tag">C/C++</span><span class="tag">JavaScript</span>
+              <span class="tag">Bash</span><span class="tag">HTML/CSS</span>
+            </div>
+            <p class="entry-role" style="margin-bottom:0.4rem;">Frameworks &amp; Libraries</p>
+            <div class="tags" style="margin-bottom:0.75rem;">
+              <span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
+              <span class="tag">CUDA</span><span class="tag">OpenCV</span>
+              <span class="tag">React</span><span class="tag">Node.js</span>
+              <span class="tag">Flask</span><span class="tag">Scikit-learn</span>
+            </div>
+            <p class="entry-role" style="margin-bottom:0.4rem;">Tools &amp; Infrastructure</p>
+            <div class="tags">
+              <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+              <span class="tag">AWS</span><span class="tag">Linux</span>
+              <span class="tag">LLVM/Clang</span><span class="tag">PostgreSQL</span>
+              <span class="tag">MongoDB</span><span class="tag">Git</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Row 2: Experience -->
+      <div class="work-cols" style="margin-top:3rem;">
+
+        <div class="work-col" style="grid-column: 1 / -1;">
           <h2 class="col-heading">Experience</h2>
+        </div>
+
+        <div class="work-col">
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Mercury</span>
+              <span class="entry-date">Sep – Dec 2026</span>
+            </div>
+            <p class="entry-role">Incoming Software Engineering Intern · Remote</p>
+            <p class="entry-desc">Building security engineering infrastructure.</p>
+            <div class="tags"><span class="tag">Security</span></div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Google</span>
+              <span class="entry-date">Jun – Sep 2026</span>
+            </div>
+            <p class="entry-role">Software Engineering Intern · Sunnyvale, CA</p>
+            <p class="entry-desc">Building scalable, reliable infrastructure for Google Cloud Networking.</p>
+            <div class="tags"><span class="tag">Cloud</span><span class="tag">Infrastructure</span></div>
+          </div>
 
           <div class="entry">
             <div class="entry-meta">
               <span class="entry-title">Splunk</span>
-              <span class="entry-date">Summer 2024</span>
+              <span class="entry-date">Jun – Sep 2025</span>
             </div>
-            <p class="entry-role">Software Engineering Intern</p>
+            <p class="entry-role">Software Engineering Intern · San Francisco, CA</p>
             <p class="entry-desc">
-              Built and shipped features on the micro-frontend platform.
-              Full-stack work on production infrastructure at enterprise scale.
+              Rebuilt the Security AI Assistant as a modular micro-frontend (React) + backend (Node.js, TypeScript, Docker),
+              enabling zero-downtime CI/CD and cutting AI feature cycles by 66%.
+              Raised remote extension load success from 0% → 100% across 4+ engineering teams.
+              Shipped with 95% automated test coverage, cutting time-to-market by 40%.
             </p>
             <div class="tags">
-              <span class="tag">TypeScript</span>
-              <span class="tag">React</span>
-              <span class="tag">Micro-frontends</span>
+              <span class="tag">React</span><span class="tag">Node.js</span>
+              <span class="tag">TypeScript</span><span class="tag">Docker</span>
+              <span class="tag">Module Federation</span>
             </div>
           </div>
 
         </div>
 
-        <!-- Projects -->
         <div class="work-col">
-          <h2 class="col-heading">Projects</h2>
 
           <div class="entry">
             <div class="entry-meta">
-              <span class="entry-title">
-                <a href="https://ahmedie.me/cosmic" target="_blank" rel="noopener">Cosmic Distance Ladder</a>
-              </span>
-              <span class="entry-date">Spring 2026</span>
+              <span class="entry-title">DALI Lab</span>
+              <span class="entry-date">Dec 2024 – Jun 2025</span>
             </div>
-            <p class="entry-role">Interactive Physics Explainer</p>
+            <p class="entry-role">Software Engineer · Hanover, NH</p>
             <p class="entry-desc">
-              Five animated simulations — Kepler's laws, radar ranging, parallax,
-              standard candles, Hubble's law. Built for a Dartmouth Physics final.
+              Built a full-stack NLP platform (Python, Flask, React) for ASR, forced alignment, POS tagging, and TTS
+              with batch + streaming inference for low-resource languages.
+              Deployed in Docker + Singularity on distributed infrastructure — saved 10,000+ manual hours.
             </p>
             <div class="tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Canvas API</span>
+              <span class="tag">Python</span><span class="tag">Flask</span>
+              <span class="tag">React</span><span class="tag">Docker</span><span class="tag">NLP</span>
             </div>
           </div>
 
           <div class="entry">
             <div class="entry-meta">
-              <span class="entry-title">
-                <a href="https://github.com/Ahmed-ie/wow-factor-resume-maker" target="_blank" rel="noopener">Resume Maker</a>
-              </span>
-              <span class="entry-date">2024</span>
+              <span class="entry-title">Google GSWEP</span>
+              <span class="entry-date">Oct – Dec 2024</span>
             </div>
-            <p class="entry-role">Portfolio Template</p>
+            <p class="entry-role">Software Engineering Fellow · New York, NY</p>
             <p class="entry-desc">
-              Typography-first developer portfolio with dark mode, timelines,
-              and print-to-PDF. Built with React and Tailwind.
+              Selected as 1 of 80 from 350+ applicants for 10 weeks of technical mentorship with Google SWEs,
+              building algorithmic foundations and interview skills.
+            </p>
+            <div class="tags"><span class="tag">Algorithms</span><span class="tag">Google</span></div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Dartmouth LISP Lab</span>
+              <span class="entry-date">Jun – Oct 2024</span>
+            </div>
+            <p class="entry-role">ML Research Intern · Hanover, NH</p>
+            <p class="entry-desc">
+              Built TensorFlow evaluation frameworks for detecting hallucinations in LLMs — reduced false positives 20%,
+              hallucinations 15%. Optimized BERT NSP accuracy by 15% across edge-case scenarios.
             </p>
             <div class="tags">
-              <span class="tag">React</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind</span>
+              <span class="tag">TensorFlow</span><span class="tag">BERT</span>
+              <span class="tag">LLMs</span><span class="tag">Python</span>
             </div>
           </div>
 
         </div>
       </div>
+
+      <!-- Row 3: Projects -->
+      <div class="work-cols" style="margin-top:3rem;">
+
+        <div class="work-col" style="grid-column: 1 / -1;">
+          <h2 class="col-heading">Projects</h2>
+        </div>
+
+        <div class="work-col">
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Compiler</span>
+            </div>
+            <p class="entry-desc">
+              Full compiler for a C language subset — lexical analysis, parsing, semantic checks, LLVM IR translation, and local/global optimizations before final code generation.
+            </p>
+            <div class="tags">
+              <span class="tag">C</span><span class="tag">C++</span><span class="tag">LLVM</span><span class="tag">Bash</span>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Rendezvous</span>
+            </div>
+            <p class="entry-desc">
+              AI-powered date and activity planning platform using embeddings and ranking logic for personalized, real-time recommendations. Led a team of 5.
+            </p>
+            <div class="tags">
+              <span class="tag">React Native</span><span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span><span class="tag">Gemini</span><span class="tag">Socket.io</span>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Cook Island Māori NLP</span>
+            </div>
+            <p class="entry-desc">
+              Full website backed by Flask APIs exposing speech recognition and synthesis pipelines for Cook Island Māori — addressing low-resource language challenges with containerized deployment.
+            </p>
+            <div class="tags">
+              <span class="tag">Flask</span><span class="tag">Python</span>
+              <span class="tag">React</span><span class="tag">Docker</span><span class="tag">Firebase</span>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Somali Morphology</span>
+            </div>
+            <p class="entry-desc">
+              Finite-state morphological analyzer for Somali — low-resource NLP with a focus on linguistic correctness.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Pynini</span><span class="tag">NLP</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="work-col">
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">
+                <a href="https://github.com/Ahmed-ie/Tiny-Search-Engine" target="_blank" rel="noopener">Tiny Search Engine</a>
+              </span>
+            </div>
+            <p class="entry-desc">
+              Search engine that crawls webpages, indexes content, and processes queries to return ranked results — akin to Google. ~2,000 lines of C.
+            </p>
+            <div class="tags">
+              <span class="tag">C</span><span class="tag">Bash</span><span class="tag">Linux</span>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Nuggets</span>
+            </div>
+            <p class="entry-desc">
+              Multiplayer game in C for Linux emphasizing manual memory management and low-level debugging.
+            </p>
+            <div class="tags">
+              <span class="tag">C</span><span class="tag">Linux</span><span class="tag">Valgrind</span><span class="tag">GDB</span>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">DrawTogether</span>
+            </div>
+            <p class="entry-desc">
+              Real-time collaborative drawing app built with Java Swing/AWT, enabling multiple users on a shared canvas.
+            </p>
+            <div class="tags">
+              <span class="tag">Java</span><span class="tag">Swing</span><span class="tag">AWT</span>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Dartmouth Pathfinder</span>
+            </div>
+            <p class="entry-desc">
+              Campus navigation tool modeling locations as a graph and computing shortest paths with visualized routes.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Graphs</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="work-cols" style="margin-top:3rem;">
+        <div class="work-col" style="grid-column: 1 / -1;">
+          <h2 class="col-heading">Leadership</h2>
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title">Dartmouth ColorStack Chapter</span>
+              <span class="entry-date">Sep 2024 – Present</span>
+            </div>
+            <p class="entry-role">Co-founder</p>
+            <p class="entry-desc">
+              Founded Dartmouth's ColorStack chapter to support Black and Latinx students in tech through mentorship programs and community building.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </main>

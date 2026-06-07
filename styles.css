@@ -81,18 +81,31 @@ button { cursor: pointer; font-family: inherit; }
   padding: 6rem 0 5rem;
 }
 
-.hero h1 {
-  font-size: clamp(2.25rem, 6vw, 3.5rem);
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
+.hero-line {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  max-width: 52ch;
+  margin-bottom: 2rem;
+  color: var(--fg);
+  font-weight: 400;
 }
 
-.hero-sub {
-  font-size: 1.0625rem;
-  color: var(--muted);
-  max-width: 38ch;
-  margin-bottom: 2rem;
-  line-height: 1.65;
+/* "breaking" and "building" — bold, no size change */
+.hero-accent {
+  font-weight: 600;
+}
+
+/* "security", "privacy", "agents" — underlined */
+.hero-underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* "Dartmouth" — italic */
+.hero-line em {
+  font-style: italic;
+  font-weight: 500;
 }
 
 .hero-links {
