@@ -210,12 +210,12 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .entry-logo {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
   flex-shrink: 0;
   object-fit: contain;
-  display: inline-block;
+  display: block;
 }
 
 .research-list {
