@@ -17,6 +17,9 @@
       <a href="index.html" class="site-name">Ahmed Elmi</a>
       <nav class="site-nav">
         <a href="index.html">Home</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon"></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -81,5 +84,20 @@
   </footer>
 
   <script src="app.js"></script>
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const icon   = toggle.querySelector('.theme-icon');
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark') document.documentElement.classList.add('dark');
+    function updateIcon() {
+      icon.textContent = document.documentElement.classList.contains('dark') ? '☀' : '☽';
+    }
+    updateIcon();
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      updateIcon();
+    });
+  </script>
 </body>
 </html>

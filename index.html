@@ -18,6 +18,9 @@
       <nav class="site-nav">
         <a href="#work">Work</a>
         <a href="journal.html">Journal</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon"></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -27,7 +30,7 @@
     <section class="hero container">
       <p class="hero-line">
         I love <span class="hero-accent">breaking</span> and <span class="hero-accent">building</span> things.
-        CS student at <em>Dartmouth</em>. Diving into
+        Comp sci student at <em>Dartmouth</em>. Diving into
         <span class="hero-underline">security</span>,
         <span class="hero-underline">privacy</span>, and
         <span class="hero-underline">agents</span>.
@@ -40,52 +43,8 @@
 
     <section id="work" class="work container">
 
-      <!-- Education + Skills -->
-      <div class="work-cols">
-
-        <div class="work-col">
-          <h2 class="col-heading">Education</h2>
-          <div class="entry">
-            <div class="entry-meta">
-              <span class="entry-title">Dartmouth College</span>
-              <span class="entry-date">2023 – 2027</span>
-            </div>
-            <p class="entry-role">B.A. Computer Science &amp; Economics · GPA 3.8</p>
-            <p class="entry-desc">Davis Scholar · UGAR Research Funding Recipient</p>
-            <p class="entry-desc">Data Structures, Software Design, Deep Learning, OS, Compilers, ML, Full Stack</p>
-          </div>
-        </div>
-
-        <div class="work-col">
-          <h2 class="col-heading">Skills</h2>
-          <div class="entry">
-            <p class="entry-role">Languages</p>
-            <div class="tags" style="margin-bottom:0.5rem;">
-              <span class="tag">Python</span><span class="tag">Java</span>
-              <span class="tag">C/C++</span><span class="tag">JavaScript</span>
-              <span class="tag">Bash</span><span class="tag">HTML/CSS</span>
-            </div>
-            <p class="entry-role">Frameworks &amp; Libraries</p>
-            <div class="tags" style="margin-bottom:0.5rem;">
-              <span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
-              <span class="tag">CUDA</span><span class="tag">OpenCV</span>
-              <span class="tag">React</span><span class="tag">Node.js</span>
-              <span class="tag">Flask</span><span class="tag">Scikit-learn</span>
-            </div>
-            <p class="entry-role">Tools &amp; Infrastructure</p>
-            <div class="tags">
-              <span class="tag">Docker</span><span class="tag">Kubernetes</span>
-              <span class="tag">AWS</span><span class="tag">Linux</span>
-              <span class="tag">LLVM/Clang</span><span class="tag">PostgreSQL</span>
-              <span class="tag">MongoDB</span><span class="tag">Git</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
       <!-- Experience -->
-      <div class="work-cols section-gap">
+      <div class="work-cols">
 
         <div class="work-col full-width">
           <h2 class="col-heading">Experience</h2>
@@ -95,7 +54,7 @@
 
           <div class="entry">
             <div class="entry-meta">
-              <span class="entry-title">Mercury</span>
+              <span class="entry-title"><span class="entry-logo">🪙</span>Mercury</span>
               <span class="entry-date">Sep – Dec 2026</span>
             </div>
             <p class="entry-role">Software Engineering Intern · Remote</p>
@@ -105,7 +64,7 @@
 
           <div class="entry">
             <div class="entry-meta">
-              <span class="entry-title">Google</span>
+              <span class="entry-title"><span class="entry-logo">🔵</span>Google</span>
               <span class="entry-date">Jun – Sep 2026</span>
             </div>
             <p class="entry-role">Software Engineering Intern · Sunnyvale, CA</p>
@@ -113,9 +72,13 @@
             <div class="tags"><span class="tag">Cloud</span><span class="tag">Infrastructure</span></div>
           </div>
 
+        </div>
+
+        <div class="work-col">
+
           <div class="entry">
             <div class="entry-meta">
-              <span class="entry-title">Splunk</span>
+              <span class="entry-title"><span class="entry-logo">🟢</span>Splunk</span>
               <span class="entry-date">Jun – Sep 2025</span>
             </div>
             <p class="entry-role">Software Engineering Intern · San Francisco, CA</p>
@@ -126,55 +89,47 @@
             <div class="tags">
               <span class="tag">React</span><span class="tag">Node.js</span>
               <span class="tag">TypeScript</span><span class="tag">Docker</span>
-              <span class="tag">Module Federation</span>
             </div>
           </div>
 
-        </div>
-
-        <div class="work-col">
-
           <div class="entry">
             <div class="entry-meta">
-              <span class="entry-title">DALI Lab</span>
+              <span class="entry-title"><span class="entry-logo">🟠</span>DALI Lab</span>
               <span class="entry-date">Dec 2024 – Jun 2025</span>
             </div>
             <p class="entry-role">Software Engineer · Hanover, NH</p>
-            <p class="entry-desc">
-              Full-stack NLP platform for ASR, forced alignment, POS tagging, and TTS for low-resource languages. Saved 10,000+ manual hours.
-            </p>
+            <p class="entry-desc">Full-stack NLP platform for low-resource languages — ASR, alignment, POS tagging, TTS. Saved 10,000+ manual hours.</p>
             <div class="tags">
               <span class="tag">Python</span><span class="tag">Flask</span>
-              <span class="tag">React</span><span class="tag">Docker</span><span class="tag">NLP</span>
-            </div>
-          </div>
-
-          <div class="entry">
-            <div class="entry-meta">
-              <span class="entry-title">Google GSWEP</span>
-              <span class="entry-date">Oct – Dec 2024</span>
-            </div>
-            <p class="entry-role">Software Engineering Fellow · New York, NY</p>
-            <p class="entry-desc">Selected 1 of 80 from 350+ applicants for 10-week technical mentorship.</p>
-            <div class="tags"><span class="tag">Algorithms</span><span class="tag">Google</span></div>
-          </div>
-
-          <div class="entry">
-            <div class="entry-meta">
-              <span class="entry-title">Dartmouth LISP Lab</span>
-              <span class="entry-date">Jun – Oct 2024</span>
-            </div>
-            <p class="entry-role">ML Research Intern · Hanover, NH</p>
-            <p class="entry-desc">
-              TensorFlow evaluation frameworks for LLM hallucination detection — reduced false positives 20%, hallucinations 15%. Optimized BERT NSP accuracy 15%.
-            </p>
-            <div class="tags">
-              <span class="tag">TensorFlow</span><span class="tag">BERT</span>
-              <span class="tag">LLMs</span><span class="tag">Python</span>
+              <span class="tag">React</span><span class="tag">Docker</span>
             </div>
           </div>
 
         </div>
+      </div>
+
+      <!-- Research -->
+      <div class="work-cols section-gap">
+
+        <div class="work-col full-width">
+          <h2 class="col-heading">Research</h2>
+        </div>
+
+        <div class="work-col full-width">
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-title"><span class="entry-logo">🎓</span>Dartmouth Computer Science Department</span>
+              <span class="entry-date">2024 – Present</span>
+            </div>
+            <p class="entry-role">Undergraduate Researcher · Hanover, NH</p>
+            <ul class="research-list">
+              <li>LLM hallucination detection — TensorFlow evaluation frameworks, reduced false positives 20%.</li>
+              <li>Somali morphological analysis — finite-state transducers for a low-resource language.</li>
+              <li>Privacy and AI agents — studying data exposure and inference risks in agentic systems.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
       <!-- Projects -->
@@ -294,5 +249,20 @@
     </div>
   </footer>
 
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const icon   = toggle.querySelector('.theme-icon');
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark') document.documentElement.classList.add('dark');
+    function updateIcon() {
+      icon.textContent = document.documentElement.classList.contains('dark') ? '☀' : '☽';
+    }
+    updateIcon();
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      updateIcon();
+    });
+  </script>
 </body>
 </html>
